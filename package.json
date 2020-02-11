@@ -1,0 +1,17 @@
+{
+  "name": "gitwd",
+  "version": "1.0.0",
+  "description": "First project for global it",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass":"node-sass sass/main.scss asset/style.css -w"
+  },
+  "keywords": [
+    "Shanto"
+  ],
+  "author": "Shanto",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.13.1"
+  }
+}

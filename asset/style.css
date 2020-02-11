@@ -1,0 +1,165 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+body {
+  font-family: 'Roboto', sans-serif; }
+  body p {
+    color: #666666; }
+  body h1 {
+    color: #444964; }
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  height: 95px;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 9999; }
+  .nav .logo img {
+    height: 40px;
+    width: 145px;
+    cursor: pointer; }
+  .nav .menu ul {
+    display: flex;
+    list-style: none; }
+    .nav .menu ul li {
+      margin: 5px;
+      padding: 8px 20px;
+      cursor: pointer; }
+      .nav .menu ul li a {
+        text-decoration: none;
+        color: #717171;
+        font-weight: 500;
+        margin-top: 2px; }
+      .nav .menu ul li:hover {
+        background-color: #F1F1F1;
+        border-radius: 5px; }
+    .nav .menu ul button {
+      background-color: #fff;
+      color: #717171;
+      border: solid 2px #000;
+      padding: 5px 30px;
+      border-radius: 5px;
+      transition: 300ms;
+      font-weight: 500; }
+      .nav .menu ul button:hover {
+        color: #fff;
+        border: solid 2px #000;
+        background-color: #5ED16F;
+        transition: 300ms; }
+
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-top: 70px; }
+  .hero-section .left img {
+    max-width: 100%;
+    height: auto; }
+  .hero-section .right {
+    position: relative; }
+    .hero-section .right .content {
+      position: absolute;
+      left: 80px;
+      top: 50px; }
+      .hero-section .right .content h1 {
+        font-size: 52px;
+        font-weight: 500; }
+      .hero-section .right .content p {
+        margin-top: 25px;
+        font-size: 19px;
+        letter-spacing: 1px; }
+      .hero-section .right .content input {
+        margin-top: 20px;
+        height: 50px;
+        width: 210px;
+        padding: 5px 10px;
+        border-radius: 8px;
+        outline: none;
+        box-shadow: none;
+        border-color: #ced4da;
+        box-sizing: border-box;
+        border: 1px solid #666666; }
+      .hero-section .right .content button {
+        padding: 13px 30px;
+        border-radius: 8px;
+        background-color: #5ED16F;
+        box-shadow: none;
+        color: #fff;
+        font-weight: 600;
+        border: 2px solid transparent;
+        letter-spacing: .25px;
+        text-transform: uppercase;
+        transition: 400ms; }
+        .hero-section .right .content button:hover {
+          background-color: #000;
+          transition: 400ms; }
+
+.service {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .service .header {
+    width: 50%; }
+    .service .header p {
+      text-align: center; }
+  .service .all-post {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 25px; }
+    .service .all-post .single-post {
+      width: 50%;
+      padding: 55px;
+      position: relative; }
+      .service .all-post .single-post img {
+        width: 70px;
+        height: 70px;
+        position: absolute;
+        left: 10px; }
+      .service .all-post .single-post h1 {
+        font-size: 27px;
+        font-weight: 600;
+        margin-left: 45px; }
+      .service .all-post .single-post p {
+        font-size: 17px;
+        margin-left: 45px; }
+
+.mobile-post-bg {
+  background-color: #F8F9FB; }
+  .mobile-post-bg .mobile-post {
+    display: flex;
+    margin-top: 30px;
+    padding: 50px 0px; }
+  .mobile-post-bg .left-side {
+    width: 40%; }
+    .mobile-post-bg .left-side img {
+      width: 100%;
+      height: auto; }
+  .mobile-post-bg .right-side {
+    width: 60%; }
+    .mobile-post-bg .right-side .article {
+      padding: 100px 60px 100px 150px; }
+      .mobile-post-bg .right-side .article span {
+        color: #5ED16F;
+        font-weight: 700;
+        font-size: 15px; }
+      .mobile-post-bg .right-side .article h1 {
+        font-size: 42px;
+        font-weight: 500;
+        margin-top: 25px; }
+      .mobile-post-bg .right-side .article p {
+        margin-top: 25px;
+        position: relative; }
+        .mobile-post-bg .right-side .article p::after {
+          content: '';
+          height: 10px;
+          width: 10px;
+          border-radius: 50%;
+          background-color: #666666;
+          position: absolute;
+          left: -20px;
+          top: 5px; }
