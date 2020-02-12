@@ -22,68 +22,74 @@ body{
     }
 }
 // top nav and menu section
-.nav {
-    display: flex;
-    justify-content: space-between;
-    height: 95px;
-    align-items: center;
+.top{
     position: sticky;
     top: 0;
     z-index: 9999;
-
-    .logo {
-
-        img {
-            height: 40px;
-            width: 145px;
-            cursor: pointer;
-        }
-    }
-
-    .menu {
-
-        ul {
-            display: flex;
-            list-style: none;
-
-            li {
-                margin: 5px;
-                padding: 8px 20px;
+    background-color: #fff;
+    // box-shadow: 2px -1px 5px 1px rgba(0,0,0,0.75);
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        height: 95px;
+        align-items: center;
+       
+    
+        .logo {
+    
+            img {
+                height: 40px;
+                width: 145px;
                 cursor: pointer;
-
-                a {
-                    text-decoration: none;
-                    color: #717171;
-                    font-weight: 500;
-                    margin-top: 2px;
-                }
-
-                &:hover {
-                    background-color: #F1F1F1;
-                    border-radius: 5px;
-                }
             }
-
-            button {
-                background-color: #fff;
-                color: #717171;
-                border: solid 2px #000;
-                padding: 5px 30px;
-                border-radius: 5px;
-                transition: 300ms;
-                font-weight: 500;
-
-                &:hover {
-                    color: #fff;
+        }
+    
+        .menu {
+    
+            ul {
+                display: flex;
+                list-style: none;
+    
+                li {
+                    margin: 5px;
+                    padding: 8px 20px;
+                    cursor: pointer;
+    
+                    a {
+                        text-decoration: none;
+                        color: #717171;
+                        font-weight: 500;
+                        margin-top: 2px;
+                    }
+    
+                    &:hover {
+                        background-color: #F1F1F1;
+                        border-radius: 5px;
+                    }
+                }
+    
+                button {
+                    background-color: #fff;
+                    color: #717171;
                     border: solid 2px #000;
-                    background-color: #5ED16F;
+                    padding: 5px 30px;
+                    border-radius: 5px;
                     transition: 300ms;
-
+                    font-weight: 500;
+    
+                    &:hover {
+                        color: #fff;
+                        border: solid 2px #000;
+                        background-color: #5ED16F;
+                        transition: 300ms;
+    
+                    }
                 }
             }
         }
     }
 }
+
 
 // top nav and menu section end
 
@@ -199,6 +205,8 @@ body{
 
 // <!-- service section start end -->
 
+
+// mobile-post start
 .mobile-post-bg{
     background-color: #F8F9FB;
     .mobile-post{
@@ -246,3 +254,78 @@ body{
         }
     }
 }
+
+// mobile-post end
+
+.optimized{
+    margin-top: 75px;
+    display: flex;
+    margin-bottom: 75px;
+    // position: relative;
+    .left-side{
+        width: 60%;
+        padding: 70px 200px 70px 0px;
+        span{
+                color: $buttongreen;
+                font-weight: 700;
+                font-size: 15px;
+        }
+        h1{
+                font-size: 42px;
+                font-weight: 500;
+                margin-top: 25px;
+        }
+        h4{
+            font-size: 15px;
+        }
+        p{
+            margin-top: 20px;
+            font-size: 13px;
+            margin-left: 25px;
+            position: relative;
+            &::after{
+                content: '';
+                width: 3px;
+                height: 80px;
+                background-color: greenyellow;
+                position: absolute;
+                left: -15px;
+                top: 0;
+            }
+        }
+        .ceo{
+            position: relative;
+            margin-top: 35px;
+            img{
+                height: 80px;
+                width: 80px;
+                border-radius: 50%;
+                position: absolute;
+            }
+            h3{
+                color: $allheader;
+                font-size: 18px;
+                font-weight: 600;
+                margin-left: 115px;
+                margin-top: 35px;
+
+            }
+            span{
+                color: $allparagraph;
+                font-size: 13px;
+                margin-left: 115px;
+                font-weight: 300;
+            }
+        }
+
+    }
+    .right-side{
+        position: absolute;
+        right: 0;
+        img{
+            width: 850px;
+            height: auto;
+        }
+    }
+}
+
